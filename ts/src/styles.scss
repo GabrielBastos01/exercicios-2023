@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Poppins&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Poppins&family=Quicksand&family=Roboto&display=swap');
+
+html, body, div, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
