@@ -1,10 +1,11 @@
-.cabeca{
-  background:#FDF1EB;
+.cabeca {
+  background: #FDF1EB;
   width: 100%;
   height: 68px;
   margin-left: 220px;
 }
-.texto{
+
+.texto {
   font-family: Roboto;
   margin-left: 20px;
   line-height: 16px;
@@ -12,7 +13,8 @@
   text-align: left;
   color: #725C5C;
 }
-.titulo{
+
+.titulo {
   font-family: Roboto;
   font-size: 22px;
   font-weight: 400;
@@ -20,10 +22,114 @@
   letter-spacing: 0em;
   text-align: left;
 }
-.paragrafo{
+
+.login {
+  float: right;
+}
+
+.titulo-secundario {
+  margin-left: 260px;
+  margin-top: 30px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #ED7839;
+}
+
+.card-resumo {
+  margin-left: 260px;
+  margin-top: 30px;
+}
+
+.titulo-resumo {
+  margin-bottom: 30px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+.texto-resumo {
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.card-discussao {
+  margin-top: 20px;
+}
+
+.topico-discussao {
+  text-align: center;
+}
+
+.titulo-discussao {
+  margin-bottom: 30px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  margin-left: 260px;
+}
+
+.texto-discussao {
+  margin-top: 30px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  color: #ED7839;
+}
+
+.criar {
+  border-radius: 3px;
+  border: none;
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  color: #ffffff;
+}
+
+.video {
+  margin-left: 260px;
+  margin-top: 30px;
+}
+
+.titulo-video {
+  position: absolute;
+  margin-left: 280px;
+  margin-top: 50px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.paragrafo {
   font-size: 14px;
   font-weight: 400;
 }
+
+.corpo-direito {
+  float: right;
+  margin-right: 50px;
+}
+
 .idioma {
   background-color: #FDF1EB;
   margin-left: 120px;
@@ -32,35 +138,99 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  border-radius: 4px;
+  border-color: #CCCCCC;
 }
 
-.side-menu{
-  float:left;
+.botao {
+  background-color: #ED7839;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+.menor {
+  width: 43px;
+  height: 31px;
+  left: 967px;
+  padding: 6px, 12px, 6px, 12px;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.texto-trabalho {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  margin-top: 15px;
+  color: #ED7839;
+}
+
+.card-direita {
+  background-color: #FDF1EB;
+}
+
+.titulo-card {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.paragrafo-discussao {
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+.baixar {
+  width: 120px;
+  height: 31px;
+  left: 842px;
+  padding: 6px, 12px, 6px, 12px;
+  border-radius: 4px;
+}
+
+.side-menu {
+  float: left;
   top: 0;
   left: 0;
   height: 100vh;
   flex-direction: column;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   position: absolute;
-  list-style:none;
+  list-style: none;
 }
-.background{
- display: flex;
- align-items: center;
- justify-content: center;
- color: #ffffff;
- background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
- width: 220px;
- height: 68px;
- font-family: Roboto;
- font-size: 30px;
- font-weight: 700;
- line-height: 35px;
- letter-spacing: 0em;
- text-align: center;
 
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+  width: 220px;
+  height: 68px;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
 }
-.card-lista{
+
+.card-lista {
   font-family: Quicksand;
   font-size: 15px;
   font-weight: 500;
@@ -68,10 +238,19 @@
   letter-spacing: 0em;
   text-align: left;
 }
+
 .lista li {
   margin-top: 2px;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
 }
-li:hover{
+
+li:hover {
   background-color: #FDF1EB;
+  cursor: pointer;
+}
+
+.rodape {
+  width: 1086px;
+  height: 181px;
+  margin-left: 260px;
 }
