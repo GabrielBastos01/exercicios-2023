@@ -1,19 +1,22 @@
-.cabeca {
+header {
   background: #FDF1EB;
-  width: 100%;
+  max-width: 180vh;
   height: 68px;
   margin-left: 220px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .texto {
   font-family: Roboto;
   margin-left: 20px;
   line-height: 16px;
-  letter-spacing: 0em;
   text-align: left;
   color: #725C5C;
 }
-
+button:hover{
+  cursor: pointer;
+}
 .titulo {
   font-family: Roboto;
   font-size: 22px;
@@ -22,9 +25,16 @@
   letter-spacing: 0em;
   text-align: left;
 }
-
+header{
+  display: flex;
+  justify-content: space-between;
+}
 .login {
-  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 20px;
+  margin-right: 200px;
 }
 
 .titulo-secundario {
@@ -94,13 +104,29 @@
   letter-spacing: 0em;
   color: #ED7839;
 }
+.add {
+  vertical-align: middle; 
+  margin-right: 5px; 
+}
 
 .criar {
+  display: inline-block;
   border-radius: 3px;
   border: none;
   background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
   color: #ffffff;
+  width: 133px;
+  height: 32px;
+  top: 1007px;
+  left: 463px;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
 }
+
 
 .video {
   margin-left: 260px;
@@ -127,19 +153,19 @@
 
 .corpo-direito {
   float: right;
-  margin-right: 50px;
+  margin-right: 250px;
+  margin-top: -40px;
 }
 
 .idioma {
   background-color: #FDF1EB;
-  margin-left: 120px;
   text-align: left;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
   border-radius: 4px;
   border-color: #CCCCCC;
+  margin-top:15px;
 }
 
 .botao {
@@ -174,20 +200,73 @@
 }
 
 .card-direita {
-  background-color: #FDF1EB;
+  height: 439px;
+  top: 200px;
+  left: 816px;
+  border-radius: 3px;
+  border: 1px;
+  width: 250px;
 }
 
 .titulo-card {
+  width: 250px;
+  height: 45px;
+  top: 73px;
+  left: 816px;
+  border-radius: 3px, 3px, 0px, 0px;
+  border: 1px;
   font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
   line-height: 25px;
   letter-spacing: 0em;
   text-align: left;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  background-color: #FDF1EB;
 }
-
+.texto-titulo{
+  padding: 10px;
+}
+.texto-card{
+  
+  font-family: Quicksand;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  border: 1px solid #ECECEC;
+  
+}
 .paragrafo-discussao {
   font-family: Quicksand;
   font-size: 14px;
@@ -207,7 +286,7 @@
   float: left;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 185vh;
   flex-direction: column;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   position: absolute;
