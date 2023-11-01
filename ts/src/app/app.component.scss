@@ -1,17 +1,19 @@
 /*  Regras da aplicação/  */
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
+
 li:hover {
   background-color: #FDF1EB;
   cursor: pointer;
 }
 
-.opcoes:hover{
+.opcoes:hover {
   cursor: pointer;
 }
-.opcoes2:hover{
+
+.opcoes2:hover {
   cursor: pointer;
 }
 
@@ -37,7 +39,7 @@ header {
 .idioma-login {
   display: flex;
   align-items: center;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .idioma {
@@ -45,12 +47,13 @@ header {
     background-color: #FDF1EB;
     text-align: left;
     display: flex;
+    width: 97px;
+    height: 34px;
     align-items: center;
     text-align: center;
     border-radius: 4px;
-    border-color: #CCCCCC;
     margin-right: 10px;
-    
+    border: 1px solid #CCCCCC
   }
 }
 
@@ -61,7 +64,7 @@ header {
 
 .bem-vindo {
   margin-right: 10px;
-  white-space: nowrap; 
+  white-space: nowrap;
   font-family: Quicksand;
   font-size: 14px;
   font-weight: 400;
@@ -100,19 +103,611 @@ header {
   border: 1px;
   width: 250px;
 }
-.card-resumo {
+
+#card-resumo {
   margin-left: 260px;
   margin-top: 70px;
   width: 1058px;
   top: 542px;
   border-radius: 3px, 3px, 0px, 0px;
   border: 1px;
+  height: auto;
 }
+
+.pai-card {
+  width: 1058px;
+}
+
+#mai {
+  display: none;
+}
+
+.card.active .content {
+  height: auto;
+}
+
+.card-resumo.active .content::before {
+  visibility: hidden;
+}
+
 .card-discussao {
   margin-top: 20px;
   width: 1058px;
   top: 761px;
   border: 1px;
+}
+
+.discussoes {
+  border: 1px solid #ECECEC;
+  margin-top: 50px;
+  width: 1359px;
+  height: 753px;
+  margin-left: 260px;
+
+  border-bottom: 200px;
+
+}
+
+.titleDiscutions {
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 35px;
+  width: 1340px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4E4E4E;
+  background-color: #FDF1EB;
+}
+
+
+.ideias {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ED7839;
+}
+
+.iconesDiscution {
+  margin-top: 30px;
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 350px;
+}
+
+
+.border-bottom {
+  border-bottom: 2px solid #E7E7E7;
+  margin-top: 30px;
+  margin-left: 180px;
+  width: 636px;
+  height: 49px;
+  color: #595959;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.btn-create-topic {
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  display: inline-flex;
+  margin-top: -20px;
+  margin-left: 420px;
+  align-items: center;
+  width: 120px;
+  height: 36px;
+  color: #FFFFFF;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  cursor: pointer;
+}
+
+.create-topics-desactive {
+  display: none;
+}
+
+/*formulario*/
+
+.formulario {
+  display: none
+}
+
+.formh3 {
+  margin-top: 30px;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 965.37px;
+  height: 18px;
+  color: #5C5C5C;
+
+}
+
+.assunto {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ED7839;
+}
+
+.inputAssunto {
+  margin-top: 5px;
+  margin-left: 20px;
+  padding-left: 20px;
+  width: 930px;
+  height: 39px;
+  border-radius: 3px;
+  border: 2px solid #CCCCCC;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4D4D4D;
+
+  &:focus {
+    outline: none;
+    border: 3px solid #CCCCCC;
+
+  }
+}
+
+.conteudo {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ED7839;
+}
+
+.inputConteudo {
+  margin-top: 5px;
+  margin-left: 20px;
+  width: 940px;
+  height: 60px;
+  border-radius: 3px;
+  border: 2px solid #CCCCCC;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  padding: 5px;
+  color: #4D4D4D;
+
+  &:focus {
+    outline: none;
+    border: 3px solid #CCCCCC;
+    text-align: left;
+
+  }
+}
+
+.send {
+  padding-left: 80px;
+  margin-top: -2px;
+  border: none;
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  display: inline-flex;
+  margin-left: 766px;
+  align-items: center;
+  width: 188px;
+  height: 36px;
+  color: #FFFFFF;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  cursor: pointer;
+}
+
+.backgroundCinza {
+  margin-left: 20px;
+  width: 940px;
+  background: linear-gradient(0deg, #CCCCCC, #CCCCCC),
+    linear-gradient(0deg, #EAF1F2, #EAF1F2);
+
+}
+
+/*formlario enviado*/
+
+.topicoEnviado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.desactive {
+  display: none;
+}
+
+.topicSend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #ED7839;
+}
+
+.paragraphSend {
+  margin-left: 290px;
+  margin-top: 10px;
+  color: #595959;
+  height: 20px;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  margin-top: 10px;
+
+}
+
+.descubra {
+  margin-top: 30px;
+  list-style: none;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #F48F44;
+}
+
+.descubra a {
+  text-decoration: underline;
+  color: #F48F44;
+}
+
+.em-branco {
+  height: 300px;
+}
+
+.btn-create-topic2 {
+  width: 180px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  margin-top: 25px;
+  margin-left: 590px;
+  height: 36px;
+  color: #FFFFFF;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  cursor: pointer;
+}
+
+
+/*perguntas*/
+
+
+.aguardandoFeedbackDosAutores {
+  margin-bottom: 150px;
+}
+
+.feedbackAutores {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: -150px;
+}
+
+.textFeedback {
+  color: #707070;
+  margin-top: 70px;
+  z-index: 2;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+
+  margin-left: 40px;
+
+}
+
+.checked {
+  font-family: Font Awesome 5 Free;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: solid;
+  margin-left: 150px;
+  margin-top: 40px;
+  position: absolute;
+  z-index: 2;
+}
+
+.paragraphFeedback {
+  margin-left: 120px;
+  margin-top: 110px;
+  position: absolute;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  list-style: none;
+  color: #F48F44;
+}
+
+.paragraphFeedback a {
+  text-decoration: underline;
+  color: #F48F44;
+}
+
+
+.perguntasTopicoEnviado::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #E7E7E7;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.perguntasTopicoEnviado {
+
+  filter: blur(5px);
+}
+
+.perguntas {
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 2px solid #E7E7E7;
+  background-color: #FFFFFF;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.ops-topic-subject {
+  margin-bottom: 5px;
+  width: 267px;
+  height: 20px;
+  color: #ED7839;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.nomes-perguntas {
+  font-family: Quicksand;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5C5C5C;
+}
+
+.paragraphquestion1 {
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4D4D4D;
+}
+
+.conjuntoIconsRes {
+
+  color: #ED7839;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.iconPontos {
+  margin-right: 5px;
+  font-size: 25px;
+  height: 28px;
+}
+
+.icon-button {
+  margin-right: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.iconFavorites {
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  width: 20px;
+  height: 10px;
+  color: white;
+  padding: 10px;
+  border-radius: 10%;
+  background-color: #ED7839;
+  padding: 6px;
+}
+
+.like {
+  margin-right: 20px;
+  color: #757575;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.respostas {
+  color: #757575;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+/*topicos respondidos*/
+
+
+.answered-topic-autor {
+  background-color: #F8F8F8;
+  border: 2px solid #E7E7E7;
+  margin-left: -20px;
+  padding-left: 15px;
+}
+
+.containerTopics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  background-color: #F8F8F8;
+}
+
+.titleAutor {
+  margin-bottom: 20px;
+  color: #ED7839;
+  margin-left: 780px;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.checkedAutor {
+  font-family: Font Awesome 5 Free;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ED7839;
+  margin-top: -2px;
+  margin-right: 50px;
+}
+
+.autor {
+  font-family: Quicksand;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5C5C5C;
+}
+
+.Coautor {
+  margin-right: -90px;
+  width: 190px;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5C5C5C;
+}
+
+.answerParagraph {
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4D4D4D;
+  margin-bottom: 20px;
+}
+
+
+/*====================*/
+.answered-topic {
+  padding-top: 20px;
+  background-color: #FFFFFF;
+  border: 2px solid #E7E7E7;
+  margin-left: -20px;
+  padding-left: 15px;
+}
+
+.creatorTilte {
+  padding-bottom: 20px;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5C5C5C;
+}
+
+.creatorParagraph {
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4D4D4D;
+  margin-bottom: 20px;
 }
 
 /*  Título dos cards  */
@@ -132,8 +727,9 @@ header {
   text-align: left;
   background-color: #FDF1EB;
 }
+
 .titulo-resumo {
-  width: 1185px;
+  width: 1360px;
   height: 45px;
   font-family: Roboto;
   font-size: 16px;
@@ -142,6 +738,7 @@ header {
   letter-spacing: 0em;
   background-color: #FDF1EB;
 }
+
 .titulo-discussao {
   width: 1184px;
   height: 45px;
@@ -171,15 +768,26 @@ header {
   letter-spacing: 0.02em;
   text-align: left;
   border: 1px solid #ECECEC;
-  width: 1184px;
+  width: 1359px;
+}
+
+#verMais {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  color: #ED7839;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .topico-discussao {
   text-align: center;
-  margin-left:260px;
+  margin-left: 260px;
   border: 1px solid #ECECEC;
   width: 1184px;
 }
+
 .texto-discussao {
   margin-top: 30px;
   font-family: Roboto;
@@ -188,9 +796,10 @@ header {
   letter-spacing: 0em;
   color: #ED7839;
 }
+
 .add {
-  vertical-align: middle; 
-  margin-right: 5px; 
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
 .criar {
@@ -276,10 +885,11 @@ header {
 
 
 
-.texto-titulo{
+.texto-titulo {
   padding: 10px;
 }
-.texto-card{
+
+.texto-card {
   font-family: Quicksand;
   font-size: 12px;
   font-weight: 400;
@@ -317,8 +927,10 @@ header {
   letter-spacing: 0.02em;
   text-align: left;
   border: 1px solid #ECECEC;
-  
+  overflow: hidden;
+  overflow-y: scroll;
 }
+
 .paragrafo-discussao {
   font-family: Quicksand;
   font-size: 14px;
@@ -360,6 +972,7 @@ header {
   letter-spacing: 0em;
   text-align: center;
 }
+
 .card-lista {
   font-family: Quicksand;
   font-size: 15px;
@@ -368,10 +981,12 @@ header {
   letter-spacing: 0em;
   text-align: left;
 }
+
 .lista li {
   margin-top: 2px;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
 }
+
 .lista::before {
   content: '';
   position: absolute;
@@ -382,12 +997,13 @@ header {
   height: 40px;
   background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
   opacity: 0;
-  pointer-events: none; 
+  pointer-events: none;
   transition: opacity 0.3s;
 }
+
 /*  Comentários prontos  */
 
-.primeiro-comentario{
+.primeiro-comentario {
   margin-top: 30px;
   margin-left: 30px;
   margin-bottom: 30px;
@@ -397,7 +1013,8 @@ header {
   border-radius: 6px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.pronto{
+
+.pronto {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 900;
@@ -406,7 +1023,8 @@ header {
   text-align: left;
   color: #ED7839;
 }
-.carlos{
+
+.carlos {
   font-family: Quicksand;
   font-size: 12px;
   font-weight: 500;
@@ -414,7 +1032,8 @@ header {
   letter-spacing: 0em;
   text-align: left;
 }
-.comentario{
+
+.comentario {
   font-family: Quicksand;
   font-size: 14px;
   font-weight: 400;
@@ -422,26 +1041,29 @@ header {
   letter-spacing: 0em;
   text-align: left;
 }
-.opcoes{
+
+.opcoes {
   font-size: 23px;
-  color:#ED7839;
+  color: #ED7839;
   display: flex;
   justify-content: flex-start;
   margin-top: 5px;
   position: absolute;
 }
-.opcoes2{
+
+.opcoes2 {
   font-size: 23px;
-  color:#ED7839;
+  color: #ED7839;
   display: flex;
   justify-content: flex-start;
   margin-top: -24px;
   position: absolute;
 }
-.coracao{
+
+.coracao {
   background-color: #ED7839;
   border: none;
-  color:#ffffff;
+  color: #ffffff;
   border-radius: 3px;
   box-shadow: #725C5C;
   width: 25px;
@@ -452,7 +1074,8 @@ header {
   margin-top: 10px;
   margin-left: 15px;
 }
-.like1{
+
+.like1 {
   display: flex;
   margin-top: -18px;
   justify-content: start;
@@ -463,9 +1086,10 @@ header {
   letter-spacing: 0em;
   text-align: left;
   margin-left: 48px;
-  
+
 }
-.like2{
+
+.like2 {
   display: flex;
   margin-top: -18px;
   margin-left: 45px;
@@ -479,7 +1103,11 @@ header {
 }
 
 .rodape {
+
   width: 1086px;
   height: 181px;
   margin-left: 260px;
+  bottom:200px;;
+  bottom: 100%;
+
 }
