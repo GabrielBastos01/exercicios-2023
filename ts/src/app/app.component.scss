@@ -820,8 +820,37 @@ header {
   letter-spacing: 0em;
   text-align: center;
 }
-
-
+.senhor{
+  position: absolute;
+  border-radius: 100px;
+  margin-left: 300px;
+  margin-top: 240px;
+  border: solid 2px #ED7839;
+}
+.nome{
+  margin-top: 300px;
+  position: absolute;
+  margin-left: 470px;
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #ffffff;
+}
+.FCA{
+  margin-top: 330px;
+  position: absolute;
+  margin-left: 470px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #ffffff;
+}
 .video {
   margin-left: 260px;
   margin-top: 30px;
